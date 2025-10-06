@@ -1,8 +1,9 @@
-import { Stack, Box } from "@mui/material";
+import { Stack, Box, IconButton } from "@mui/material";
 import { logo } from "../../constants";
 import { colors } from "../../constants/colors";
 import { Link } from "react-router-dom";
 import { SearchBar } from "../";
+import TelegramIcon from "@mui/icons-material/Telegram"; // 🔹 Telegram ikonka
 
 const Navbar = () => {
     return (
@@ -28,8 +29,20 @@ const Navbar = () => {
             >
                 <img src={logo} alt="logo" height="30" width="30" />
             </Link>
+
             <SearchBar />
-            <Box />
+
+            <Box>
+                <IconButton
+                    component="a"
+                    href="https://t.me/yourusername" // bu yerga o'z Telegram username'ingni yoz
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ color: "#fff" }}
+                >
+                    <TelegramIcon fontSize="large" />
+                </IconButton>
+            </Box>
         </Stack>
     );
 };
