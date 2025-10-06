@@ -35,12 +35,12 @@ const Navbar = () => {
             <Box>
                 <IconButton
                     component="a"
-                    href="https://t.me/yourusername" // bu yerga o'z Telegram username'ingni yoz
+                    href="https://t.me/javokhirOka" // bu yerga o'z Telegram username'ingni yoz
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{ color: "#fff" }}
                 >
-                    <TelegramIcon fontSize="large" />
+                    <TelegramIcon fontSize="large" /> Javokhir Oka
                 </IconButton>
             </Box>
         </Stack>
